@@ -1,10 +1,23 @@
-
+import { Features, Download, SectionWrapper } from './components'
+import assets from './assets'
 
 const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">React Native Nft Showcase</h1>
-    </div>
+    <>
+      <SectionWrapper
+        title="Your own store of Nifty NFTs. Start Selling and Owning"
+        description="Store, Collect NFTs, Exchange & Earn Crypto. Join 25+ million people using ProNef MarketPlace"
+        showBtn
+        mockupImg={assets.homeHero}
+        banner="banner"
+      />
+      <SectionWrapper
+        title="Smart User interface Marketplace"
+        description="Experience a buttery UI of ProNef MarketPlace. Smooth Constant colors of a fluent UI design"
+        mockupImg={assets.homeCards}
+        reverse
+      />
+    </>
   );
 }
 
