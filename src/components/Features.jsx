@@ -5,10 +5,10 @@ import assets from '../assets'
 
 const FeatureCard = ({ iconUrl, iconText}) => (
   <div className={`${styles.featureCard}`}>
-    {iconText}
+    <img src={iconUrl} alt='icon' className={styles.featureImg}/>
+    <p className={styles.featureText}>{iconText}</p>
   </div>
 )
-
 
 const Features = () => {
   return (
